@@ -1,12 +1,10 @@
 var userFullName = '';
 var userKey = '';
-
 window.addEventListener('load', showWelcome);
 function showWelcome(){
   let html = '<h2>Bienvenido ' + userFullName + '</h2>\n';
   html += `
-          <p>Este sistema fue desarrollado por alumnos del primer año de la Escuela Profesional de Ingeniería de Sistemas, de la Universidad Nacional de San Agustín de Arequipa</p>
-          <p>El sistema fué desarrollado usando estas tecnologías:</p>
+          <p>Desarrolle este proyecto usando estas tecnologías:</p>
           <ul>
             <li>HTML y CSS</li>
             <li>Perl para el backend</li>
@@ -18,7 +16,6 @@ function showWelcome(){
           </ul>`;
   document.getElementById('main').innerHTML = html;
 }
-
 function showMenuUserLogged(){
   let html = "<p onclick='showWelcome()'>Inicio</p>\n"+
     "<p onclick='doList()'>Lista de Páginas</p>\n"+
@@ -26,4 +23,3 @@ function showMenuUserLogged(){
     "<p onclick='showNew()' class='rightcolumn'>Página Nueva</p>\n"
   document.getElementById('menu').innerHTML = html;
 }
-
